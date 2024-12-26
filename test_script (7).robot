@@ -14,7 +14,7 @@ New Tab test
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --disable-gpu
-    Open Browser    about:blank    ${BROWSER}    options=${options}
+    Open Browser    https://www.amazon.com    ${BROWSER}    options=${options}
 Input Text    name=q   //input[@name="field-keywords"]    Wait Until Element Is Visible    xpath=//input[@name="field-keywords"]    timeout=5
 Input Text    //input[@name="field-keywords"]    new phone
     Close Browser
